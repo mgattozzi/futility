@@ -1,0 +1,16 @@
+[package]
+name = "futility"
+version = "0.1.0"
+edition = "2021"
+description = "Functional Utility types and functions for common tasks in Rust"
+authors = ["Michael Gattozzi <self@mgattozzi.dev>"]
+license = "GPL-3.0-or-later"
+documentation = "https://docs.rs/futility"
+homepage = "https://github.com/mgattozzi/futility"
+repository = "https://github.com/mgattozzi/futility"
+
+[dependencies]
+thiserror = "1.0"
+
+[dev-dependencies]
+color-eyre = "0.6"
