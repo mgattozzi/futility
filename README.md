@@ -1,5 +1,5 @@
 # futility
-Functional Utility types and functions for common tasks in Rust
+Functional Utility types, macros, and functions for common tasks or needs in Rust
 
 ## Motivation
 I often have found that I have to keep writing similar logic or types or traits
@@ -11,7 +11,17 @@ Given this is a grab bag of functions and types you can either peruse the
 documentation or look at the examples provided or the tests to have an
 understanding of what's possible. Currently these modules exist:
 
-- termination: types and functions associated with exiting a program
+- `termination`: types and functions associated with exiting a program
+
+These macros currently exist:
+
+- `try_`: a macro to use `try/catch` blocks in Rust until they're actually
+  implemented in the language
+
+## Versioning
+Some of these items are implemented in subcrates like the `try_` proc-macro.
+Their versions are tied to the top level `fuitlity` crate which itself follows
+semver.
 
 # License
 Copyright (C) 2022 Michael Gattozzi

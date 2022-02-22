@@ -1,0 +1,17 @@
+[package]
+name = "futility-try-catch"
+version = "0.1.1"
+authors = ["Michael Gattozzi <self@mgattozzi.dev>"]
+edition = "2021"
+description = "try/catch proc-macro for the futility crate"
+license = "GPL-3.0-or-later"
+documentation = "https://docs.rs/futility"
+homepage = "https://github.com/mgattozzi/futility"
+repository = "https://github.com/mgattozzi/futility"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }

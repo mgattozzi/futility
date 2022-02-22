@@ -1,8 +1,8 @@
 [package]
 name = "futility"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-description = "Functional Utility types and functions for common tasks in Rust"
+description = "Functional Utility types, macros, and functions for common tasks or needs in Rust"
 authors = ["Michael Gattozzi <self@mgattozzi.dev>"]
 license = "GPL-3.0-or-later"
 documentation = "https://docs.rs/futility"
@@ -11,6 +11,12 @@ repository = "https://github.com/mgattozzi/futility"
 
 [dependencies]
 thiserror = "1.0"
+futility-try-catch = { path = "futility-try-catch", version = "0.1.1" }
+
+[workspace]
+members = [
+  "futility-try-catch"
+]
 
 [dev-dependencies]
 color-eyre = "0.6"
